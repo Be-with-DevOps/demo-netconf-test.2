@@ -19,6 +19,7 @@
     <groupId>org.opendaylight.netconf.model</groupId>
     <artifactId>rfc6241</artifactId>
     <packaging>bundle</packaging>
+    <version>6.0.6-ios-mcn-1</version>
     <name>${project.artifactId}</name>
     <description>RFC6241 Network Configuration Protocol (NETCONF)</description>
 
