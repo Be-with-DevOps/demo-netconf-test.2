@@ -253,7 +253,7 @@
 	<servers>
               <server>
                 <id>github</id>
-                <username>Be-with-DevOps</username>
+                <username>niveditapa21</username>
 		<password>${env.GIT_TOKEN}</password>
               </server>
             </servers>
