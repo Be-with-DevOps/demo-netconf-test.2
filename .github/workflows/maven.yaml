@@ -34,7 +34,7 @@ jobs:
       run: mvn -s ${GITHUB_WORKSPACE}/settings.xml -B validate --file pom.xml 
 
     - name: Debug Environment Variable
-      run:  echo "GIT_TOKEN:${{ env.GIT_TOKEN }}"
+      run:  echo "GIT_TOKEN:${{ secrets.GIT_TOKEN }}"
 
     - name: 🚀 Deploy to GitHub Packages
       env:
