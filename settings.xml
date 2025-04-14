@@ -253,7 +253,7 @@
 	<servers>
               <server>
                 <id>github</id>
-                <username>ios-mcn-smo</username>
+                <username>Be-with-DevOps</username>
 		<password>${env.GITHUB_TOKEN}</password>
               </server>
             </servers>
