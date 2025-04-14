@@ -43,5 +43,5 @@ jobs:
     - name: 🚀 Deploy to GitHub Packages
       env:
         GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
-      run: mvn -s ${GITHUB_WORKSPACE}/settings.xml -X --file pom.xml deploy -DaltDeploymentRepository=github::default::https://maven.pkg.github.com/Be-with-DevOps/demo-netconf-test.2 -DskipTests=true
+      run: mvn -s ${GITHUB_WORKSPACE}/settings.xml -X --file pom.xml --batch-mode deploy -DaltDeploymentRepository=github::default::https://maven.pkg.github.com/Be-with-DevOps/demo-netconf-test.2 -DskipTests=true
       
