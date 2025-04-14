@@ -33,8 +33,8 @@ jobs:
     - name: Build with Maven
       run: mvn -s ${GITHUB_WORKSPACE}/settings.xml -B validate --file pom.xml 
 
-    - name: 🚀 Deploy to GitHub Packages
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
-      run: mvn -s ${GITHUB_WORKSPACE}/settings.xml --file pom.xml deploy -DaltDeploymentRepository=github::default::https://maven.pkg.github.com/ios-mcn-smo/netconf -DskipTests=true
+    # name: 🚀 Deploy to GitHub Packages
+     # env:
+        #GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
+      #run: mvn -s ${GITHUB_WORKSPACE}/settings.xml --file pom.xml deploy -DaltDeploymentRepository=github::default::https://maven.pkg.github.com/Be-with-DevOps/demo-netconf-test.2 -DskipTests=true
       
