@@ -42,4 +42,8 @@ jobs:
 
     - name: 🚀 Deploy to GitHub Packages
       run: |
-         mvn --batch-mode deploy -DaltDeploymentRepository=github::default::https://maven.pkg.github.com/Be-with-DevOps/demo-netconf-test.2 -DskipTests=true -Dgithub.username=niveditapa21 -Dgithub.password=${{ secrets.GIT_TOKEN }}
+         export GIT_TOKEN=${{ secrets.GIT_TOKEN }}
+         mvn -s ${GITHUB_WORKSPACE}/settings.xml --batch-mode deploy -DaltDeploymentRepository=github::default::https://maven.pkg.github.com/Be-with-DevOps/demo-netconf-test.2 -DskipTests=true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+        GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
