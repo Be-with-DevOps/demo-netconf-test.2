@@ -254,7 +254,7 @@
               <server>
                 <id>github</id>
                 <username>Be-with-DevOps</username>
-		<password>${env.GITHUB_TOKEN}</password>
+		<password>${env.GITHUBTOKEN}</password>
               </server>
             </servers>
 </settings>
