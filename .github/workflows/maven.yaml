@@ -21,6 +21,10 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    
+    env:
+      GITHUB_USERNAME: ${{ github.actor }}
+      GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
 
     steps:
     - uses: actions/checkout@v4
