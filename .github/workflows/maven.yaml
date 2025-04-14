@@ -41,7 +41,5 @@ jobs:
       run:  echo "GIT_TOKEN:${{ secrets.GIT_TOKEN }}"
 
     - name: 🚀 Deploy to GitHub Packages
-      env:
-        GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
-      run: mvn -s ${GITHUB_WORKSPACE}/settings.xml -X --file pom.xml --batch-mode deploy -DaltDeploymentRepository=github::default::https://maven.pkg.github.com/Be-with-DevOps/demo-netconf-test.2 -DskipTests=true
-      
+      run: |
+         mvn --batch-mode deploy -DaltDeploymentRepository=github::default::https://maven.pkg.github.com/Be-with-DevOps/demo-netconf-test.2 -DskipTests=true -Dgithub.username=niveditapa21 -Dgithub.password=${{ secrets.GIT_TOKEN }}
