@@ -35,6 +35,6 @@ jobs:
 
     - name: 🚀 Deploy to GitHub Packages
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
       run: mvn -s ${GITHUB_WORKSPACE}/settings.xml --file pom.xml deploy -DaltDeploymentRepository=github::default::https://maven.pkg.github.com/ios-mcn-smo/netconf -DskipTests=true
       
