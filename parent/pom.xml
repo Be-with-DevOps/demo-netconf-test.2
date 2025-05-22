@@ -17,7 +17,7 @@
 
   <groupId>org.opendaylight.netconf</groupId>
   <artifactId>netconf-parent</artifactId>
-  <version>6.0.6-snapshot</version>
+  <version>6.0.6-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <dependencyManagement>
