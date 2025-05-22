@@ -19,7 +19,7 @@
 
     <groupId>org.opendaylight.netconf</groupId>
     <artifactId>netconf-aggregator</artifactId>
-    <version>6.0.6-SNAP</version>
+    <version>6.0.7</version>
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
  
